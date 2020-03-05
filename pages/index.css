@@ -1,0 +1,43 @@
+.normal {
+  text-align: center;
+  /* color: white; */
+}
+
+.h1 {
+  width: 800px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* color: white; */
+}
+
+.h3 {
+  background-color: #a1d4ca;
+  margin-top: 10px;
+}
+.panel {
+  background-color: rgb(128, 169, 196);
+  width: 800px;
+  min-height: 400px;
+  margin: auto;
+  border-radius: 20px;
+  padding:20px
+}
+
+.flexInLine {
+  display: flex;
+  justify-self: start;
+}
+
+.line1 {
+}
+
+.line2 {
+  min-height: 300px;
+}
+
+.col1 {
+  width: 200px;
+  border-radius: 5px;
+  margin: 5px;
+}
