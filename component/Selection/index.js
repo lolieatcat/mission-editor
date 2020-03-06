@@ -5,11 +5,15 @@ import styles from './index.css';
 const { Option } = Select;
 
 class Selections extends Component {
-  renderResult(result) {
+  constructor(props) {
+    super(props);
+  }
+
+  renderResult(result, value) {
     return (
       <div className={styles.flexInLine} style={{ padding: "3px" }} key={result.key}>
-        <div style={{ width: "56px", margin: "auto", marginLeft: "5px" }}>结果1：</div>
-        <Select style={{ width: "80px", margin: "auto", marginLeft: "5px" }} defaultValue={result.type}>
+        <div style={{ width: "56px", margin: "auto", marginLeft: "5px" }}>结果{result.key}：</div>
+        <Select style={{ width: "80px", margin: "auto", marginLeft: "5px" }} value={result.type} onChange={(e) => { this.props.onSelectChange(value.key, result.key, e); }}>
           <Option value=".ra">.ra</Option>
           <Option value="ra成功">ra成功</Option>
           <Option value="ra失败">ra失败</Option>
@@ -20,7 +24,7 @@ class Selections extends Component {
           <Option value="跳转">跳转</Option>
           <Option value="结束">结束</Option>
         </Select>
-        <Input style={{ width: "100px", margin: "auto", marginLeft: "5px" }} defaultValue={result.data}/>
+        <Input style={{ width: "100px", margin: "auto", marginLeft: "5px" }} value={result.data} onChange={(e) => { this.props.onResultChange(value.key, result.key, e); }} />
       </div>
     );
   }
@@ -31,17 +35,17 @@ class Selections extends Component {
         <div>
           <div className={styles.flexInLine} style={{ padding: "3px" }}>
             <div style={{ width: "68px", margin: "auto" }}>选项{value.key}：</div>
-            <Input style={{ margin: "auto" }} defaultValue={value.desc}/>
+            <Input style={{ margin: "auto" }} value={value.desc} onChange={(e) => { this.props.onOptionDescChange(value.key, e) }} />
           </div>
           <div style={{ padding: "3px" }}>
-            <Button style={{ marginLeft: "52px" }}>添加结果</Button>
-            <Button style={{ marginLeft: "11px" }}>减少结果</Button>
+            <Button style={{ marginLeft: "52px" }} onClick={() => { this.props.onAddResult(value.key) }}>添加结果</Button>
+            <Button style={{ marginLeft: "11px" }} onClick={() => { this.props.onRemoveResult(value.key) }}>减少结果</Button>
           </div>
         </div>
         <div>
           {
             results.map(result => {
-              return this.renderResult(result);
+              return this.renderResult(result, value);
             })
           }
         </div>
