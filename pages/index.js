@@ -140,7 +140,7 @@ class MissionEditor extends React.Component {
           <div className={styles.line1 + " " + styles.flexInLine}>
             <div className={styles.col1}>
               <Button style={{ margin: "5px" }} onClick={this.onNewMission}>新建</Button>
-              <Button style={{ margin: "5px" }} onClick={this.onDownload}>下载...</Button>
+              <Button style={{ margin: "5px" }} onClick={this.onDownload}>保存...</Button>
             </div>
             <div className={styles.flexInLine}>
               <div style={{ width: "60px", margin: "auto" }}>标题：</div>
@@ -157,7 +157,7 @@ class MissionEditor extends React.Component {
               }} />
               <div style={{ height: "0px", overflow: "hidden", position: "absolute" }}>
                 <input type="file" id="up" /></div>
-              <Button style={{ margin: "auto", marginLeft: "10px" }} onClick={this.onUpload}>上传...</Button>
+              <Button style={{ margin: "auto", marginLeft: "10px" }} onClick={this.onUpload}>打开...</Button>
             </div>
           </div>
           <h3 className={styles.h3}>事件设计</h3>
@@ -226,9 +226,9 @@ class MissionEditor extends React.Component {
           <p>开源地址：<a url="https://github.com/molin0000/mission-editor">https://github.com/molin0000/mission-editor</a></p>
           <h3>闲话少说，让我们开始吧</h3>
           <p>1）点击新建按钮，可清空当前副本，请认真填写标题和作者信息（也可以不新建直接修改）；</p>
-          <p>2）在编写完成后，请一定要点击下载按钮，将副本文件下载到本地；</p>
+          <p>2）在编写完成后，请一定要点击保存按钮，将副本文件保存到本地；</p>
           <p>3）服务器是不会保存你的副本的哦，请自己认真保管副本文件；</p>
-          <p>4）如果写到一半，想下次再写，也请点击下载，保存好文件，下次点上传按钮，上传后就可以继续写了；</p>
+          <p>4）如果写到一半，想下次再写，也请点击保存，保存好文件，下次点打开按钮，打开后就可以继续写了；</p>
           <p>5）结果中的.ra是扔一个1~100的骰子，小于你后面填写的数值，就是成功，大于是失败；</p>
           <p>6）结果中的跳转，可以让剧情跳转到你写的另一条事件，请认真填写跳转到的事件序号；</p>
           <p>7）同一个选项的结果是会从结果0开始顺序执行的；</p>
