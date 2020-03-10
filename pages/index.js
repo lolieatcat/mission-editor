@@ -223,7 +223,7 @@ class MissionEditor extends React.Component {
           <p>第一次加载可能有点慢，后面再打开就快了~</p>
           <p>完全开源免费哦~而且支持离线运行，也就是说网页打开以后，没有网络也能用。</p>
           <p>手机端的话，就横屏使用吧O(∩_∩)O哈哈~</p>
-          <p>开源地址：<a url="https://github.com/molin0000/mission-editor">https://github.com/molin0000/mission-editor</a></p>
+          <p>开源地址：<a href="https://github.com/molin0000/mission-editor">https://github.com/molin0000/mission-editor</a></p>
           <h3>闲话少说，让我们开始吧</h3>
           <p>1）点击新建按钮，可清空当前副本，请认真填写标题和作者信息（也可以不新建直接修改）；</p>
           <p>2）在编写完成后，请一定要点击保存按钮，将副本文件保存到本地；</p>
@@ -239,7 +239,7 @@ class MissionEditor extends React.Component {
           <p>12) 副本写好后，把保存的.json文件发给机器人管理员就可以了；</p>
           <p>13) 也可以选择上传QQ群文件统一管理，看大家的选择吧~</p>
           <h3>再说几句闲话</h3>
-          <p>喜欢的话，可以在这里为作者空想之喵(molin)发电哦: <a url="https://afdian.net/@molin">https://afdian.net/@molin</a></p>
+          <p>喜欢的话，可以在这里为作者空想之喵(molin)发电哦: <a href="https://afdian.net/@molin">https://afdian.net/@molin</a></p>
           <p>最初是作为诡秘之主QQ群游戏《序列战争》的副本编辑器来开发的，后来发现可以作为通用编辑器~</p>
           <p>喜欢诡秘之主的可以来QQ粉丝群:731419992，策划群:1028799086，游玩群:1030551041,466238445 </p>
         </div>
