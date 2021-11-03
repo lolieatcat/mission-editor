@@ -3,3 +3,4 @@ dist/
 .umi/
 yarn*
 dist/
+.vercel

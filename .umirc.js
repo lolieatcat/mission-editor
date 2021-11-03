@@ -1,11 +1,5 @@
 export default {
-  plugins: [
-    [
-      "umi-plugin-react",
-      {
-        dva: false,
-        antd: true,
-      }
-    ],
-  ],
+  antd: {},
+  // favicon: '/favico.png',
+  title: 'Mission Editor'
 };
